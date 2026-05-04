@@ -2,17 +2,13 @@
 
 A minimal PyTorch implementation of **Denoising Diffusion Probabilistic Models (DDPM)** trained on the MNIST dataset.
 
-> Based on the paper: [Denoising Diffusion Probabilistic Models](https://arxiv.org/abs/2006.11239) (Ho et al., 2020)
+> Based on: [Tutorial on Diffusion Models for Imaging and Vision](https://arxiv.org/abs/2403.18103) — Stanley Chan, 2025
 
 ---
 
 ## Overview
 
 This project implements a DDPM from scratch, including a lightweight U-Net noise predictor and a linear noise schedule. The model learns to generate handwritten digits by iteratively denoising samples starting from pure Gaussian noise.
-
-**Generated samples after 150 epochs of training:**
-
-![Generated Samples](ddpm_unet_outputs/epoch_150.png)
 
 ---
 
@@ -107,3 +103,9 @@ jupyter notebook DDPM.ipynb
 - PyTorch 1.12+
 - torchvision
 - matplotlib
+
+---
+
+## Reference
+
+Stanley H. Chan. *Tutorial on Diffusion Models for Imaging and Vision*. arXiv:2403.18103, 2025.
